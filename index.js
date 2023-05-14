@@ -1,4 +1,11 @@
-const log = require('hexo-log')({ 'debug': false, 'slient': false });
+var hexoLog = require('hexo-log');
+var log = typeof hexoLog["default"] === 'function' ? hexoLog["default"]({
+  debug: false,
+  silent: false
+}) : hexoLog({
+  debug: false,
+  silent: false
+});
 
 /**
  * md文件返回 true
@@ -12,15 +19,12 @@ function ignore(data) {
 }
 
 function action(data) {
-    var reverseSource = data.source.split("").reverse().join("");
-    var fileName = reverseSource.substring(3, reverseSource.indexOf("/")).split("").reverse().join("");
-
-    // ![example](postname/example.jpg)  -->  {% asset_img example.jpg example %}
-    var regExp = RegExp("!\\[(.*?)\\]\\(" + fileName + '/(.+?)\\)', "g");
+    // <!-- hidden:start -->([\\s\\S]*)<!-- hidden:end -->  -->  空
+    var regExp = RegExp("<!-- hidden:start -->([\\s\\S]*)<!-- hidden:end -->", "g");
     // hexo g
-    data.content = data.content.replace(regExp, "{% asset_img $2 $1 %}","g");
+    data.content = data.content.replace(regExp, "","g");
 
-    // log.info(`hexo-asset-img: filename: ${fileName}, title: ${data.title.trim()}`);
+    // log.info(`hexo-hidden`);
     
     return data;
 }

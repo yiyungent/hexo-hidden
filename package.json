@@ -1,14 +1,14 @@
 {
-  "name": "hexo-asset-img",
+  "name": "hexo-hidden",
   "version": "1.0.0",
-  "description": "转换 相对图片路径 为 asset_img",
+  "description": "Hexo plugin: Hide part of the post",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yiyungent/hexo-asset-img.git"
+    "url": "git+https://github.com/yiyungent/hexo-hidden.git"
   },
   "keywords": [
     "hexo"
@@ -16,7 +16,7 @@
   "author": "yiyun",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yiyungent/hexo-asset-img/issues"
+    "url": "https://github.com/yiyungent/hexo-hidden/issues"
   },
-  "homepage": "https://github.com/yiyungent/hexo-asset-img#readme"
+  "homepage": "https://github.com/yiyungent/hexo-hidden#readme"
 }
