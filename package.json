@@ -1,6 +1,6 @@
 {
   "name": "hexo-hidden",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hexo plugin: Hide part of the post",
   "main": "index.js",
   "scripts": {
