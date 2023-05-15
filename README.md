@@ -44,7 +44,7 @@ npm install hexo-hidden --save
 
 ## Related Projects
 
-- [yiyungent/clear-image-action: ������ Image detection. | 图片检测 | 清理未引用图片 | 删除未引用图片 | 检查引用的图片是否有效 | GitHub Actions](https://github.com/yiyungent/clear-image-action)
+- [yiyungent/clear-image-action: 🔧 Image detection. | 图片检测 | 清理未引用图片 | 删除未引用图片 | 检查引用的图片是否有效 | GitHub Actions](https://github.com/yiyungent/clear-image-action)
 
 ## Donate
 
